@@ -1,2 +1,2 @@
 #!/bin/bash
-mysql_safe
+mysqld_safe &

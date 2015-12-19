@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM centos:7
 
 MAINTAINER zwshao1986@gmail.com
 
@@ -9,6 +9,8 @@ RUN yum install -y wget
 RUN wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 
 RUN rpm -ivh /root/mysql-community-release-el7-5.noarch.rpm
+
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
 RUN yum install -y mysql-server
 
