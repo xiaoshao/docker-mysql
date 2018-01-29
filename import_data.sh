@@ -9,7 +9,3 @@ mysql -e "CREATE DATABASE docker_mysql"
 mysql -e "CREATE TABLE docker_mysql.user(id int, name varchar(20))"
 
 mysql -e "insert into docker_mysql.user(id, name) values(1, 'xiaoshao'),(2, 'xiaoshao1')"
-
-mysql -e "CREATE DATABASE gogs"
-
-mysql -e "create database zhanggeliang"
